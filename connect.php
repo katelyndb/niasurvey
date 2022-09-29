@@ -1,29 +1,20 @@
 <?php
 
-/* Host name of the MySQL server */
-$host = 'localhost';
-
-/* MySQL account username */
-$user = 'myUser';
-
-/* MySQL account password */
-$passwd = 'myPasswd';
-
-/* The schema you want to use */
-$schema = 'mySchema';
-
-/* Connection with MySQLi, procedural-style */
-$mysqli = mysqli_connect($host, $user, $passwd, $schema);
-
-/* Check if the connection succeeded */
-if (!$mysqli)
-{
-   echo 'Connection failed<br>';
-   echo 'Error number: ' . mysqli_connect_errno() . '<br>';
-   echo 'Error message: ' . mysqli_connect_error() . '<br>';
-   die();
-}
-
-echo 'Successfully connected!<br>';
-
+function createConnection(){
+   $server = 'localhost';
+   $dbname= 'niasurvey';
+   $username = 'root';
+   $password = '';
+   $dsn = 'mysql:host='.$server.';dbname='.$dbname;
+   $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+   // Create the actual connection object and assign it to a variable
+   try {
+    $link = new PDO($dsn, $username, $password, $options);
+    return $link;
+   } catch(PDOException $e) {
+    echo 'Sorry, the connection failed';
+    exit;
+   }
+  }
+createConnection();
 ?>
