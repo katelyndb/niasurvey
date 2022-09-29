@@ -2,7 +2,7 @@
 
 function createConnection(){
    $server = 'localhost';
-   $dbname= 'phpmotors';
+   $dbname= 'niasurvey';
    $username = 'root';
    $password = '';
    $dsn = 'mysql:host='.$server.';dbname='.$dbname;

@@ -10,4 +10,7 @@ $query = 'SELECT * FROM results WHERE question1 = '. $user_selection;
 
 
 
+
+
+
 ?>
