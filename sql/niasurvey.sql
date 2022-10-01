@@ -34,7 +34,7 @@ INSERT INTO people (ID, LastName, Firstname, age, gender) VALUES (6, 'Goodwill',
 INSERT INTO people (ID, LastName, Firstname, age, gender) VALUES (7, 'Goodwill','Hal', 10, 'M');
 INSERT INTO people (ID, LastName, Firstname, age, gender) VALUES (8, 'Goodwill','Lil', 16, 'F');
 INSERT INTO people (ID, LastName, Firstname, age, gender) VALUES (9, 'Goodwill','Cy', 12, 'M');
-INSERT INTO people (ID, LastName, Firstname, age, gender) VALUES (10, 'Goodwill','Cindy', 45, 'F');
+INSERT INTO people (ID, LastName, Firstname, age, gender) VALUES (10, 'Goodwill','Cindy', 47, 'F');
 INSERT INTO people (ID, LastName, Firstname, age, gender) VALUES (11, 'Goodwill','Tim', 52, 'M');
 INSERT INTO people (ID, LastName, Firstname, age, gender) VALUES (12, 'Blunck','Autumn', 42, 'F');
 INSERT INTO people (ID, LastName, Firstname, age, gender) VALUES (13, 'Blunck','Corinne', 18, 'F');
