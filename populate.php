@@ -1,11 +1,5 @@
 <?php
-
-
-// Katie is Messing around in PHP
-//$user_selection = $_REQUEST['user_selection'];
-//$query = 'SELECT * FROM results WHERE question1 = '. $user_selection;
-
-    // Creating the PDO Connection with the Proxy User
+// Creating the PDO Connection with the Proxy User
     $server = 'localhost';
     $dbname= 'niasurvey';
     $username = 'iClient';
@@ -15,7 +9,7 @@
     try {
      $link = new PDO($dsn, $username, $password, $options);
     } catch(PDOException $e) {
-     header('Location: ../phpmotors/view/500.php');
+     header('Location: ./view/500.php');
      exit;
     }
     /*
@@ -64,6 +58,7 @@
 }
 */
 
+//  Calls the function for each button
 if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['songsbutton']))
     {
         showSongs($link);
@@ -76,7 +71,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['colorsbutton']))
 
 
 
-    // Retrieving the Data and Displaying to the User
+    // Retrieving the Song Data and Displaying to the User
     function showSongs($link){
     $data = $link->query("SELECT people.FirstName, survey.Song FROM people JOIN survey ON people.ID = survey.ID;")->fetchAll();
     echo "<table>";
