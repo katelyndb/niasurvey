@@ -13,6 +13,10 @@
     <main>
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . './niasurvey/populate.php'; ?>
         <p>Hi </p>
+        
+        <form method="post">
+        <input type="submit" class="button" name="popbutton" value="Populate Data" />
+        </form>
         <!-- <php include 'CONTENTNAME'; ?></header> -->
     </main>
     <footer> <hr> </header>
