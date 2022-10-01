@@ -11,13 +11,11 @@
 <body>
     <header><h1> Nia's Survey!</h1><hr></header>
     <main>
+    <form method="post">
+        <input type="submit" class="button" name="songsbutton" value="Show Songs"<?php if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['songsbutton'])) { ?> style="display: none" <?php } ?> />
+        <input type="submit" class="button" name="colorsbutton" value="Show Colors"<?php if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['colorsbutton'])) { ?> style="display: none" <?php } ?> />
+    </form>
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . './niasurvey/populate.php'; ?>
-        <p>Hi </p>
-        
-        <form method="post">
-        <input type="submit" class="button" name="popbutton" value="Populate Data" />
-        </form>
-        <!-- <php include 'CONTENTNAME'; ?></header> -->
     </main>
     <footer> <hr> </header>
     
