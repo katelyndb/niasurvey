@@ -1,10 +1,10 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+This software was a demonstration of the programming langauge PHP and an application of my experience with HTML, CSS, and SQL Relational Databases.
 
-{Provide a description the software that you wrote and how it integrates with a SQL Relational Database. Describe how to use your program.}
+Using the niasurvey database, this program displays two queries of data from a set of surveys that my cousin has taken. To use this program you must create and populate the database using niasurvey.sql. The populate.php file displays the information in a webpage.
 
-{Describe your purpose for writing this software.}
+The purpose of this software was to demonstrate these concepts and to provide a way for the information collected to be effectively displayed for analysis.
 
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of how created the Relational Database.}
 
@@ -12,25 +12,25 @@
 
 # Relational Database
 
-{Describe the relational database you are using.}
+The relational database I am using in this program is mySQL and I used phpMyAdmin to run the queries. 
 
-{Describe the structure (tables) of the relational database that you created.}
+The structure of the database includes two tables, the people and the survey table. The people table contains the general name, age, and gender of each person who took the survey. The survey table includes all the results from each person. These two tables' shared key is the attribute ID. Using this ID we can perform a join between both tables and retrive the information.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+My IDE for this program was Visual Studio Code. I used a MySQL database through the web server solution XAMPP.
 
-{Describe the programming language that you used and any libraries.}
+The lamguages I used for this program include HTML, CSS, PHP, and SQL.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [W3Schools](https://www.w3schools.com/php/php_mysql_intro.asp)
+* [PHP.net](https://www.php.net/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Make the information easily updatable
+* Function to display all of the information
+* User search and query system
+* Potential Authentication or User System
+
