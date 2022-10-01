@@ -9,7 +9,7 @@
     $server = 'localhost';
     $dbname= 'niasurvey';
     $username = 'iClient';
-    $password = '(S/TOBJMxH8iRP!V'; 
+    $password = 'qKBk!RNTOZIPyOm!'; 
     $dsn = "mysql:host=$server;dbname=$dbname";
     $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
     try {

@@ -1,10 +1,10 @@
 /* General Stuff */
 html {box-sizing: border-box;}
-body {font-family: 'Gowun Dodum', sans-serif; margin:0;}
-h1,h2,h3,h4 {font-family:'Glass Antiqua', cursive; margin:2% 0; color: darkcyan;}
-h1 {font-size: 45px;} h2 {font-size: 35px;} h3 {font-size: 25px;} h4 {font-size: 20px;}
+body {font-family: 'Helvetica', sans-serif; margin:0;}
+h1,h2,h3,h4 {font-family:'Helvetica', cursive; margin:2% 0; color: darkcyan;}
+h1 {font-size: 50px;} h2 {font-size: 35px;} h3 {font-size: 25px;} h4 {font-size: 20px;}
 p {font-size: 17px;}
-hr {border:0; border-top:2px solid; margin:5% 0;}
+hr {border:0; border-top:2px dashed; margin:5% 0;}
 .small_padding {padding: 1% 2%;}
 .medium_padding {padding: 3% 6%;}
 .large_padding {padding: 6% 12%;}
@@ -13,8 +13,11 @@ hr {border:0; border-top:2px solid; margin:5% 0;}
 .text_link {color: inherit; text-decoration: inherit; }
 /*----*/
 
-
-
+/* Survey Page */
+table {border-radius: 8px;display: block;padding: .75rem;text-align: center;text-decoration: none;font-size: 22px; border: 3px solid rgba(3, 3, 10, 0.212);width: 100%; background-color: #0e8494; margin: auto;}
+input {border-radius: 8px;display: block;padding: 1rem;text-align: center;text-decoration: none;font-size: 22px; margin: auto;background-color: rgb(211, 255, 240); color:darkcyan;}
+form{padding-bottom: .75rem;}
+td {padding: 10px; text-align: center;color: rgb(9, 0, 48);text-shadow: 1px 1px 1px rgb(28, 126, 255); background-color: aliceblue;border: 3px solid rgba(3, 3, 10, 0.212);margin: auto; width: 5%;}
 
 
 /* Lovely Colors */
